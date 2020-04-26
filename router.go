@@ -424,7 +424,7 @@ func main() {
 	// Note: Here gorilla is like passing our own server handler into net/http, by default its false
 	srv := &http.Server{
 		Handler: gorilla,
-		Addr:    "127.0.0.1:5051",
+		Addr:    "0.0.0.0:5051",
 		// Good practice: enforce timeouts for servers you create!
 		WriteTimeout: 15 * time.Second,
 		ReadTimeout:  15 * time.Second,
